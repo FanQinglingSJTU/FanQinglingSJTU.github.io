@@ -1,0 +1,155 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #042048; /* Lighter Blue (SkyBlue) */
+    padding: 40px; /* Increased padding for a thicker bar */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Bolder font */
+    font-size: 1.2em; /* Slightly larger font */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+    color: gray;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Flexbox for photo and bio */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 150px; /* Adds distance from the left edge */
+}
+
+.photo {
+    flex: 1;
+    max-width: 200px; /* Limit the width of the photo */
+    margin-right: 5px; /* Add some spacing between photo and bio */
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 15px; /* Optional: round corners of the image */
+}
+
+
+
+.bio {
+    flex: 2;
+    max-width: 1000px;
+}
+
+.bio p {
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #042048;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Timeline for Education */
+.timeline {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 40px;
+    border-left: 3px solid #87CEEB; /* Vertical timeline line */
+}
+
+.timeline-item {
+    display: flex; /* Use flexbox to align logo and text side by side */
+    align-items: flex-start; /* Align text and logo to the top */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-item img.edu-logo {
+    width: 100px; /* Set the logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 30px; /* Add spacing between logo and text */
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: #87CEEB;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    max-width: 600px;
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.timeline-content span {
+    display: block;
+    font-size: 0.9em;
+    color: gray;
+}
+
+.timeline-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
